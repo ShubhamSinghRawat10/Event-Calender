@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Welcome</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Great+Vibes&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="landing">
+		<!-- Decorative calendar icon (top-right) -->
+		<svg class="hero-icon" viewBox="0 0 200 140" aria-hidden="true">
+			<defs>
+				<linearGradient id="calBody" x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0%" stop-color="#1a3a64"/>
+					<stop offset="100%" stop-color="#122a4b"/>
+				</linearGradient>
+				<linearGradient id="calTop" x1="0" y1="0" x2="0" y2="1">
+					<stop offset="0%" stop-color="#18345b"/>
+					<stop offset="100%" stop-color="#0f2748"/>
+				</linearGradient>
+				<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+					<feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#0a1230" flood-opacity="0.35"/>
+				</filter>
+			</defs>
+			<g filter="url(#shadow)">
+				<!-- Calendar body -->
+				<rect x="6" y="30" width="130" height="92" rx="12" fill="url(#calBody)" stroke="#0e2546" stroke-width="2"/>
+				<!-- Top bar -->
+				<rect x="6" y="16" width="130" height="26" rx="10" fill="url(#calTop)" stroke="#0e2546" stroke-width="2"/>
+				<!-- Pins -->
+				<circle cx="36" cy="16" r="6.5" fill="#ff5bb2" stroke="#ffd1e7" stroke-width="1"/>
+				<circle cx="96" cy="16" r="6.5" fill="#ff5bb2" stroke="#ffd1e7" stroke-width="1"/>
+				<!-- Grid inside calendar -->
+				<g stroke="#2b4d7d" stroke-width="3" opacity="0.9">
+					<line x1="26" y1="58" x2="116" y2="58"/>
+					<line x1="26" y1="80" x2="116" y2="80"/>
+					<line x1="26" y1="102" x2="116" y2="102"/>
+					<line x1="46" y1="44" x2="46" y2="118"/>
+					<line x1="71" y1="44" x2="71" y2="118"/>
+					<line x1="96" y1="44" x2="96" y2="118"/>
+				</g>
+				<!-- Clock on right -->
+				<circle cx="162" cy="78" r="30" fill="none" stroke="#173a63" stroke-width="10"/>
+				<line x1="162" y1="78" x2="162" y2="58" stroke="#ff4fa6" stroke-width="6" stroke-linecap="round"/>
+				<line x1="162" y1="78" x2="176" y2="78" stroke="#ff4fa6" stroke-width="6" stroke-linecap="round"/>
+				<circle cx="162" cy="78" r="3.5" fill="#ff4fa6"/>
+			</g>
+		</svg>
+
+		<div class="hero-hi">hi</div>
+
+		<div class="glass-card" role="group" aria-label="Intro">
+			<h1 class="hero-title">Its Your Event Calender</h1>
+			<p class="hero-subtitle">Plan, remember, and make every day count.</p>
+		</div>
+
+		<a class="start-btn" href="calendar.html" rel="noopener">START <span class="arrow">→</span></a>
+	</div>
+</body>
+</html>
+
+

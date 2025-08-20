@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calendar</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="app">
+		<header class="topbar">
+			<div class="topbar-left">
+				<button id="btn-today" class="btn">Today</button>
+				<div class="nav-group">
+					<button id="btn-prev" class="icon-btn" aria-label="Previous month" title="Previous month">&#x2039;</button>
+					<button id="btn-next" class="icon-btn" aria-label="Next month" title="Next month">&#x203A;</button>
+				</div>
+				<h1 id="label-month" class="month-label" aria-live="polite"></h1>
+			</div>
+			<div class="topbar-right">
+				<button id="btn-add" class="primary-btn">+ New event</button>
+			</div>
+		</header>
+
+		<div class="calendar">
+			<div class="weekdays" aria-hidden="true">
+				<div>Sun</div>
+				<div>Mon</div>
+				<div>Tue</div>
+				<div>Wed</div>
+				<div>Thu</div>
+				<div>Fri</div>
+				<div>Sat</div>
+			</div>
+			<div id="calendar-grid" class="calendar-grid" role="grid" aria-label="Calendar month view"></div>
+		</div>
+	</div>
+
+	<!-- Add/Edit Event Modal -->
+	<div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+		<div class="modal-content" role="document">
+			<div class="modal-header">
+				<h2 id="modal-title">Add event</h2>
+				<button id="cancel-modal" class="icon-btn" aria-label="Close">✕</button>
+			</div>
+			<form id="event-form" class="event-form">
+				<input type="hidden" id="event-id">
+				<div class="form-row">
+					<label class="form-field">
+						<span>Date</span>
+						<input type="date" id="event-date" required>
+					</label>
+					<label class="form-field">
+						<span>Title</span>
+						<input type="text" id="event-title" placeholder="Event title" required>
+					</label>
+				</div>
+				<div class="form-row">
+					<label class="form-field">
+						<span>Start</span>
+						<input type="time" id="event-start" value="09:00" required>
+					</label>
+					<label class="form-field">
+						<span>End</span>
+						<input type="time" id="event-end" value="10:00" required>
+					</label>
+					<label class="form-field">
+						<span>Color</span>
+						<input type="color" id="event-color" value="#1a73e8">
+					</label>
+				</div>
+				<label class="form-field">
+					<span>Description</span>
+					<textarea id="event-desc" rows="4" placeholder="Optional"></textarea>
+				</label>
+				<div class="modal-actions">
+					<button type="submit" id="save-event" class="primary-btn">Save</button>
+					<button type="button" id="delete-event" class="danger-btn hidden">Delete</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- Templates -->
+	<template id="day-cell-template">
+		<div class="day" role="gridcell" aria-selected="false">
+			<div class="day-header">
+				<span class="day-number"></span>
+			</div>
+			<div class="events"></div>
+		</div>
+	</template>
+
+	<template id="event-chip-template">
+		<div class="event-chip" draggable="true">
+			<span class="event-time"></span>
+			<span class="event-title"></span>
+		</div>
+	</template>
+
+	<script src="script.js" defer></script>
+	<noscript>This calendar requires JavaScript to run.</noscript>
+	
+	<!-- Simple toast -->
+	<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
+
+
