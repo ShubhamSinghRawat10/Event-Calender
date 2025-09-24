@@ -3,7 +3,7 @@
 Elegant, fast, and offline-first event calendar built with vanilla HTML, CSS, and JavaScript. Create, edit, drag-and-drop, and delete events right in your browser. Data is stored locally using `localStorage`.
 
 <p align="center">
-  <img alt="Event Calendar preview" src="https://raw.githubusercontent.com/[your-username]/[your-repo]/main/.github/preview.png" width="820" />
+  <img alt="Event Calendar preview" src="https://raw.githubusercontent.com/[ShubhamSinghRawat10]/[Event-Calender]/main/.github/preview.png" width="820" />
 </p>
 
 <p align="center">
@@ -75,7 +75,7 @@ PRs welcome! If you find a bug or want a feature:
 2. Fork → create a branch → commit → open PR with context and screenshots if UI-related
 
 ### 📜 License
-MIT © `[shubhamsinghrawat10]`
+MIT © `[ShubhamSinghRawat10]`
 
 ---
 
