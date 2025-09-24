@@ -1,8 +1,7 @@
-<div align="center">
 ## Event Calendar 🗓️
 
 Elegant, fast, and offline-first event calendar built with vanilla HTML, CSS, and JavaScript. Create, edit, drag-and-drop, and delete events right in your browser. Data is stored locally using `localStorage`.
-</div>
+
 <!-- <p align="center">
   <img alt="Event Calendar preview" src="https://raw.githubusercontent.com/[ShubhamSinghRawat10]/[Event-Calender]/main/.github/preview.png" width="820" />
 </p>
