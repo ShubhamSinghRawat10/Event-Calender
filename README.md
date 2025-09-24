@@ -2,7 +2,7 @@
 
 Elegant, fast, and offline-first event calendar built with vanilla HTML, CSS, and JavaScript. Create, edit, drag-and-drop, and delete events right in your browser. Data is stored locally using `localStorage`.
 
-<p align="center">
+<!-- <p align="center">
   <img alt="Event Calendar preview" src="https://raw.githubusercontent.com/[ShubhamSinghRawat10]/[Event-Calender]/main/.github/preview.png" width="820" />
 </p>
 
@@ -13,7 +13,7 @@ Elegant, fast, and offline-first event calendar built with vanilla HTML, CSS, an
   <img alt="Built with" src="https://img.shields.io/badge/built%20with-HTML%20·%20CSS%20·%20JS-0ea5e9">
 </p>
 
----
+--- -->
 
 ### ✨ Features
 - **Fast month view**: 6-week grid with outside days for context
