@@ -7,8 +7,8 @@ Elegant, fast, and offline-first event calendar built with vanilla HTML, CSS, an
 </p>
 
 <p align="center">
-  <a href="https://github.com/[your-username]/[your-repo]/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/[your-username]/[your-repo]?style=flat&color=1a73e8"></a>
-  <a href="https://github.com/[your-username]/[your-repo]/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/[your-username]/[your-repo]?style=flat&color=ffd166"></a>
+  <a href="https://github.com/[ShubhamSinghRawat10]/[Event-Calender]/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/[ShubhamSinghRawat10]/[Event-Calender]?style=flat&color=1a73e8"></a>
+  <a href="https://github.com/[ShubhamSinghRawat10]/[Event-Calender]/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/[ShubhamSinghRawat10]/[Event-Calender]?style=flat&color=ffd166"></a>
   <a href="#-license"><img alt="License" src="https://img.shields.io/badge/license-MIT-10b981"></a>
   <img alt="Built with" src="https://img.shields.io/badge/built%20with-HTML%20·%20CSS%20·%20JS-0ea5e9">
 </p>
